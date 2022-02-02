@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,9 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: Scaffold(
           appBar: PreferredSize(
-            preferredSize: Size.fromHeight(100.0), // here the desired height
+            preferredSize: const Size.fromHeight(100.0), // here the desired height
             child: AppBar(
-              title: Text(
+              title: const  Text(
                 "Welcome, Subtain",
                 style: TextStyle(
                   fontSize: 25,
@@ -32,12 +34,12 @@ class MyApp extends StatelessWidget {
                 children: [
                   Container(
                     color: Colors.blue,
-                    margin: EdgeInsets.fromLTRB(5, 20, 5, 30),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 35),
+                    margin:const EdgeInsets.fromLTRB(5, 20, 5, 30),
+                    padding:const EdgeInsets.fromLTRB(10, 10, 10, 35),
                     child: TextButton.icon(
                       onPressed: null,
-                      icon: Icon(Icons.person),
-                      label: Text(
+                      icon:const Icon(Icons.person),
+                      label: const Text(
                         "MANAGE MEMBER",
                         style: TextStyle(
                           fontSize: 10,
@@ -47,12 +49,12 @@ class MyApp extends StatelessWidget {
                   ),
                   Container(
                     color: Colors.blue,
-                    margin: EdgeInsets.fromLTRB(5, 20, 5, 30),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 35),
+                    margin:const EdgeInsets.fromLTRB(5, 20, 5, 30),
+                    padding:const EdgeInsets.fromLTRB(10, 10, 10, 35),
                     child: TextButton.icon(
                       onPressed: null,
-                      icon: Icon(Icons.youtube_searched_for),
-                      label: Text(
+                      icon:const Icon(Icons.youtube_searched_for),
+                      label:const Text(
                         "MANAGE SUBSCRIPTION",
                         style: TextStyle(
                           fontSize: 10,
@@ -67,12 +69,12 @@ class MyApp extends StatelessWidget {
                 children: [
                   Container(
                     color: Colors.blue,
-                    margin: EdgeInsets.fromLTRB(5, 20, 5, 30),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 35),
+                    margin:const EdgeInsets.fromLTRB(5, 20, 5, 30),
+                    padding:const EdgeInsets.fromLTRB(10, 10, 10, 35),
                     child: TextButton.icon(
                       onPressed: null,
-                      icon: Icon(Icons.cabin_sharp),
-                      label: Text(
+                      icon:const Icon(Icons.cabin_sharp),
+                      label:const Text(
                         "MANAGE CASH REGISTER",
                         style: TextStyle(
                           fontSize: 10,
@@ -82,12 +84,12 @@ class MyApp extends StatelessWidget {
                   ),
                   Container(
                     color: Colors.blue,
-                    margin: EdgeInsets.fromLTRB(5, 20, 5, 30),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 35),
+                    margin:const EdgeInsets.fromLTRB(5, 20, 5, 30),
+                    padding:const EdgeInsets.fromLTRB(10, 10, 10, 35),
                     child: TextButton.icon(
                       onPressed: null,
-                      icon: Icon(Icons.contact_page),
-                      label: Text(
+                      icon:const Icon(Icons.contact_page),
+                      label:const Text(
                         "MANAGE COLLECTION",
                         style: TextStyle(
                           fontSize: 10,
@@ -102,12 +104,12 @@ class MyApp extends StatelessWidget {
                 children: [
                   Container(
                     color: Colors.blue,
-                    margin: EdgeInsets.fromLTRB(5, 20, 5, 30),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 35),
+                    margin:const EdgeInsets.fromLTRB(5, 20, 5, 30),
+                    padding:const EdgeInsets.fromLTRB(10, 10, 10, 35),
                     child: TextButton.icon(
                       onPressed: null,
-                      icon: Icon(Icons.image),
-                      label: Text(
+                      icon:const Icon(Icons.image),
+                      label:const Text(
                         "MY CASH REGISTER",
                         style: TextStyle(
                           fontSize: 10,
@@ -117,13 +119,13 @@ class MyApp extends StatelessWidget {
                   ),
                   Container(
                     color: Colors.blue,
-                    margin: EdgeInsets.fromLTRB(5, 20, 45, 30),
-                    padding: EdgeInsets.fromLTRB(10, 10, 40, 35),
+                    margin:const EdgeInsets.fromLTRB(5, 20, 45, 30),
+                    padding:const EdgeInsets.fromLTRB(10, 10, 40, 35),
 
                     child: TextButton.icon(
                       onPressed: null,
-                      icon: Icon(Icons.report),
-                      label: Text(
+                      icon:const Icon(Icons.report),
+                      label:const Text(
                         "REPORT",
                         style: TextStyle(
                           fontSize: 10,
@@ -138,13 +140,13 @@ class MyApp extends StatelessWidget {
                 children: [
                   Container(
                     color: Colors.orange,
-                    margin: EdgeInsets.all(30.0),
+                    margin:const EdgeInsets.all(30.0),
                     child: ElevatedButton.icon(
                       onPressed: () {},
-                      icon: Icon(Icons.email),
-                      label: Text("LOGOUT"),
+                      icon:const Icon(Icons.email),
+                      label:const Text("LOGOUT"),
                       style: ElevatedButton.styleFrom(
-                        textStyle: TextStyle(fontSize: 25),
+                        textStyle:const TextStyle(fontSize: 25),
                       ),
                     ),
                   ),
